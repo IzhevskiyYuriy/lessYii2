@@ -86,7 +86,7 @@ class ArticleController extends Controller
         $article = Articles::find()
             ->where(['id' => Yii::$app->request->get()['id']])
             ->one();
-        
+
         $article->hits += 1;
         $article->save();
         return $this->render('article', [
