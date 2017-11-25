@@ -94,9 +94,4 @@ class ArticleController extends Controller
     }
 
 
-
-
-
-
-
 }
